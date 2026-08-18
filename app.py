@@ -90,6 +90,6 @@ async def botchat(request : ChatQuestions):
 #         media_type="text/plain"
 #     )
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("app:app",reload=True)
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run("app:app",reload=True)
