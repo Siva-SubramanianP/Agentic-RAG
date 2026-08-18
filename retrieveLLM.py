@@ -21,7 +21,7 @@ async def retrievefromLLM(question):
         embedding_function=ef
     )
 
-    client_groq = Groq(api_key="your_api_key")
+    client_groq = Groq(api_key="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")
 
     query = question
     results = collection.query(
@@ -45,7 +45,7 @@ async def retrievefromLLM(question):
         for chunk in contexts
     ]
 
-    COHERE_API_KEY = "your_cohere_key"
+    COHERE_API_KEY = "BdoUvcZvPrWc8hHwsu3jcqQJPAtQrdU9FlFTg7bU"
 
     reranker = CohereRerank(
         cohere_api_key=COHERE_API_KEY,
