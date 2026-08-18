@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RAG Dashboard</title>
+		<link rel="stylesheet" href="/static/css/style.css?v=2">
+
+	</head>
+	<body>
+		<div class="layout">
+			<div class="sidebar">
+				<h2>Dashboard</h2>
+				<button onclick="dashboard()">Document RAG</button>
+				<button onclick="Normalchat()">AI Chat</button>
+				<button onclick="logout()">Logout</button>
+			</div>
+			<div class="main">
+				<h1>Document Loader</h1>    
+				
+				<div class="card">
+					<h3>Upload Documents</h3>
+					<div class="upload-box">
+						<input type="file" id="files" multiple>
+						<button onclick="uploadDocuments()">Upload</button>
+					</div>
+					<p id="uploadStatus"></p>
+				</div>
+					
+                <div class="card chat-card">
+                    <h3>Ask Your Query</h3>
+                    <div id="chatBox" class="chat-box">
+                        <!-- <div class="bot"></div> -->
+                    </div>
+                    <div class="query-area">
+                        <input id="query" placeholder="Ask something about your documents...">
+                        <!-- <button onclick="askRAGQuestion()">Send</button> -->
+                    </div>
+				</div>
+			</div>
+		</div>
+	
+	<script src="/static/js/dashboard.js"></script>
+	
+	</body>
+</html>
